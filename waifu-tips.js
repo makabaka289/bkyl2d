@@ -49,7 +49,7 @@ function loadWidget(config) {
 	let userAction = false,
 		userActionTimer,
 		messageTimer,
-		messageArray = ["长按鼠标后松开有惊喜哦~", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果觉得文章有用记得点个赞哦~"];
+		messageArray = ["长按鼠标后松开有惊喜哦~", "逝者如斯，不舍昼夜", "嗨～是在发呆吗", "如果有喜欢的鲜花，一定要购买呀！"];
 	window.addEventListener("mousemove", () => userAction = true);
 	window.addEventListener("keydown", () => userAction = true);
 	window.addEventListener("click", () => userAction = true);
@@ -89,7 +89,7 @@ function loadWidget(config) {
 		});
 		document.querySelector("#waifu-tool .fa-times").addEventListener("click", () => {
 			localStorage.setItem("waifu-display", Date.now());
-			showMessage(["愿你有一天能与重要的人重逢。","所有离别都是为了更好的重逢。"], 2000, 11);
+			showMessage(["愿你有一天能与你最喜欢的鲜花重逢。","所有离别都是为了更好的重逢。"], 2000, 11);
 			document.getElementById("waifu").style.bottom = "-500px";
 			setTimeout(() => {
 				document.getElementById("waifu").style.display = "none";
